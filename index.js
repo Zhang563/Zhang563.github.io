@@ -5,7 +5,7 @@ const n = document.querySelector("#innumber").value;
     // if (data === error){
     //   alert("Pick a number");
     // }else {
-    // console.log($('#number').text(data));
+    console.log($('#number').text(data));
     // }
 
   });
