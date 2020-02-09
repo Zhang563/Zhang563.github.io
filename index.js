@@ -4,5 +4,6 @@ const n = document.querySelector("#innumber").value;
     $('#number').text(data);
     console.log($('#number').text(data));
   });
-
 }
+
+//function
