@@ -1,12 +1,12 @@
-function setup(){
-
-}
 function show(){
   document.getElementById('title').style.visibility="visible";
   document.getElementById('date').style.visibility="visible";
   document.getElementById('pic').style.visibility="visible";
   document.getElementById('explanation').style.visibility="visible";
   document.getElementByid('astrobuttons').style.visibility="hidden";
+  document.getElementByid('title').scrollIntoView({
+    behavior: 'smooth'
+  });
 }
 function show2(){
   document.getElementById('numbuttons').style.visibility="visible";
@@ -56,8 +56,8 @@ req.addEventListener("load", function(){
   }
 })
 
-// function scroll(){
-// document.querySelector('.title').scrollIntoView({
-//   behavior: 'smooth'
-// });
-// }
+function scroll(){
+  document.querySelector('.title').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
