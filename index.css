@@ -24,7 +24,7 @@ number{
     outline: none;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-
+    margin-bottom:100px;
 }
 
 .numberfact{
