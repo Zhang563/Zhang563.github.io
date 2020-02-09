@@ -5,5 +5,5 @@ const n = document.querySelector("#innumber").value;
     console.log($('#number').text(data));
   });
 }
-
-//function
+const element =  document.querySelector('.body-content');
+element.classList.add('animated', 'bounceIn');
