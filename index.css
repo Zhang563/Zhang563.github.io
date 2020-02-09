@@ -1,33 +1,77 @@
 body{
   font-family: 'Oswald', sans-serif;
+  background-color:darkgrey;
 }
 .body-content{
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 25px;
 }
 
 .button{
   cursor: pointer;
+  text-align: center;
 }
-number{
+
+.setupButtons{
+    display:flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.bottons{
+    width:180px;
+    border-radius: 40px;
+    margin: 15px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+html{
+  scroll-behavior: smooth;
+}
+.numbers{
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.astronomy{
+  background-color: rgb(25,25,25);
+  color:rgb(230,230,230);
+}
+#EnterNumber{
+  text-align: center;
+}
+.number{
   padding:5px;
 }
 .number-input{
-    width: 50%;
+    width: 100%;
     font-size: 24px;
     padding:5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
     border-radius: 40px;
     border: none;
     outline: none;
+    align-items: center;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
-    margin-bottom:50px;
+    /* margin-bottom:50px; */
 }
 
 .numberfact{
   margin-top: 35px;
   margin-bottom: 35px;
+  text-align:center;
 }
+
+.title{
+  font-size:100px;
+  align-items: center;
+}
+
+/* .NASAPOTD{
+  display: none
+} */

@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Hello</title>
       <script src="jquery.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
       <link type="text/css" href="index.css" rel="stylesheet"/>
+      <title>Fun Fact</title>
     </head>
+
     <body>
       <div class="body-content">
-        <h1 class="bounce">Foogle</h1>
-        <!-- <h1>Foogle</h1> -->
-        <span class="numberfact" id="number"></span>
-        <div class="face" id="number-fact"></div>
-        <div class = "fact" id="fun-fact"></div>
-        <input class="number-input" id = "innumber">
-        <div class="button-container">
-          <div class = "number button" onclick = "getRandomFact()">Number-Facts</div>
-          <div class = "astronomy button" onclick =""><Astronomy-Facts</div>
-        </div>
+
+      <h1 class="title">Fungle</h1>
+
+      <div class="setupButtons">
+        <div class="bottons numbers" onclick= "show2()"> Number Facts</div>
+        <div id="astrobuttons"class="bottons astronomy" onclick = "show()">Anstronomy</div>
       </div>
-      <script src="index.js"></script>
+
+
+
+
+
+        <div class="numberFacts">
+          <span class="numberfact" id="number"></span>
+          <input class="number-input" id = "innumber" style="visibility:hidden"></input>
+
+          <div class="button-container">
+            <p style="visibility:hidden" id='EnterNumber'>Enter Whole Number</p>
+            <div id="numbuttons" class = "number button" onclick = "getRandomFact()" style="visibility:hidden">Search</div>
+          </div>
+        </div>
+
+
+
+        <div class="NASAPOTD">
+          <h2 id="title" style="visibility:hidden"></h2>
+          <h3 style="visibility:hidden">Date: <span id="date" ></span></h3>
+          <img id="pic" src="" alt="NASA Picture Of The Day" width="100%" style="visibility:hidden">
+          <p id="explanation" style="visibility:hidden"></p>
+        </div>
+
+          <input id="myButton"class=butt style="visibility:visible" type="button" value="If you don't like me, then click me" onclick="hide()"></input>
+        </div>
+
+        <script src="index.js"></script>
     </body>
 
 </html>
